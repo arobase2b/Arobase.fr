@@ -273,6 +273,11 @@ footer{
     bottom: 5px;
   }
 }
+@media only screen and (max-width: 840px) {
+  .navigation {
+    bottom: 0;
+  }
+}
 
 @media only screen  and (max-width: 667px) and (min-width: 600) {
   .shlass {
@@ -288,7 +293,7 @@ footer{
     margin-bottom: 1.5rem;
   }
   .navigation {
-    bottom: 3rem;
+    bottom: 8rem;
   }
 }
 
