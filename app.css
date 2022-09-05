@@ -276,7 +276,7 @@ footer{
 
 @media only screen  and (max-width: 667px) and (min-width: 600) {
   .shlass {
-    bottom: 40px;
+    bottom: 20px;
   }
   .slider--title {
     margin-bottom: 1.5rem;
@@ -294,7 +294,7 @@ footer{
 
 @media only screen and (max-width: 600px)  {
   .shlass {
-    bottom: 75px;
+    bottom: 40px;
   }
   .slider--title {
     margin-bottom: 1.5rem;
