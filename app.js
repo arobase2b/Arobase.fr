@@ -5,6 +5,7 @@ const sliderBtn = document.querySelector('.slider--btn');
 const sliderTitle = document.querySelector('.slider--title');
 const btnLeft = document.querySelector('.slider__btn-left');
 const btnRight = document.querySelector('.slider__btn-right');
+const nav = document.querySelector('.nav');
 
 const sliderImages = [
   {
@@ -159,34 +160,12 @@ btnLeft.addEventListener('click', function() {
   }, 1000);
   console.log("end: "+slideCounter)
 });
-// btnLeft.addEventListener('click', function() {
-//   if (slideCounter === 0) {
-//     slideContainer.style.backgroundImage = `linear-gradient(
-//       to right,
-//       rgba(34, 34, 34, 0.4),
-//       rgba(68, 68, 68, 0.4)
-//     ),url(${sliderImages[sliderImages.length - 1].src})`;
-//     sliderText.innerHTML = sliderImages[sliderImages.length - 1].text;
-//     sliderTitle.innerHTML = sliderImages[sliderImages.length - 1].title;
-//     slideCounter = sliderImages.length;
-//     slideContainer.classList.add('fadeIn');
-//     setTimeout(() => {
-//       slideContainer.classList.remove('fadeIn');
-//     }, 1000);
-//   }
 
-//   slideContainer.style.backgroundImage = `linear-gradient(
-//       to right,
-//       rgba(34, 34, 34, 0.4),
-//       rgba(68, 68, 68, 0.4)
-//     ),url(${sliderImages[slideCounter - 1].src})`;
-//   sliderText.innerHTML = sliderImages[slideCounter - 1].text;
-//   sliderTitle.innerHTML = sliderImages[slideCounter - 1].title;
-  
-//   slideCounter--;
-//   slideContainer.classList.add('fadeIn');
-//   setTimeout(() => {
-//     slideContainer.classList.remove('fadeIn');
-//   }, 1000);
-// });
+
 document.addEventListener('DOMContentLoaded', startSlider);
+
+for (let i = 0; i < sliderImages.length; i++) {
+  nav[i].addEventListener('click', function (e) {
+    console.log(e);
+  });
+}

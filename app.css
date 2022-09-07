@@ -111,8 +111,9 @@ footer{
   flex-direction: row-reverse;
 }
 .slider {
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-color: #000;
   height: 100vh;
